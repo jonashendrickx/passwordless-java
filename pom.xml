@@ -21,14 +21,14 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
+        <!--<snapshotRepository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/jonashendrickx/passwordless-java</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </snapshotRepository>
+        </snapshotRepository>-->
         <repository>
             <id>ossrh</id>
             <name>Central Repository OSSRH</name>
