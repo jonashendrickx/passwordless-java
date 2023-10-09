@@ -12,7 +12,7 @@
             <passphrase>${env.GPG_PASSPHRASE}</passphrase>
         </server>
         <server>
-            <id>s01.oss.sonatype.org</id>
+            <id>ossrh</id>
             <username>${SONATYPE_USER}</username>
             <password>${SONATYPE_PASSWORD}</password>
         </server>
