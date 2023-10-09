@@ -11,5 +11,10 @@
             <id>gpg.passphrase</id>
             <passphrase>${env.GPG_PASSPHRASE}</passphrase>
         </server>
+        <server>
+            <id>s01.oss.sonatype.org</id>
+            <username>${SONATYPE_USER}</username>
+            <password>${SONATYPE_PASSWORD}</password>
+        </server>
     </servers>
 </settings>
