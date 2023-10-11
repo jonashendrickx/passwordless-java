@@ -6,19 +6,41 @@ The official [Bitwarden Passwordless.dev](https://passwordless.dev/) Java librar
 
 **Maven**: add to the `<dependencies>` in *pom.xml* file:
 
-```xml
+1. Add to your `pom.xml` the repository where our package is hosted:
 
+```xml
+<repositories>
+    <repository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/content/repositories/releases</url>
+    </repository>
+</repositories>
+```
+
+2. Add to your `pom.xml` the dependency to our package:
+
+```xml
 <dependency>
     <groupId>com.bitwarden</groupId>
     <artifactId>passwordless</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.5</version>
+    <classifier>javadoc</classifier>
 </dependency>
 ```
 
 **Gradle**: add to the `dependencies` in *gradle.build* file:
 
 ```groovy
-implementation group: 'org.bitwarden', name: 'passwordless', version: '0.0.1-SNAPSHOT'
+repositories {
+    maven {
+        name 'ossrh'
+        url 'https://s01.oss.sonatype.org/content/repositories/releases'
+    }
+}
+
+dependencies {
+    implementation group: 'com.bitwarden', name: 'passwordless', version: '1.0.5'
+}
 ```
 
 ### Dependencies
